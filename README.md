@@ -1,2 +1,3 @@
 # HypeCode
-Only my non working shit
+Working and non working shit
+Truc qui marche et qui marche pas
