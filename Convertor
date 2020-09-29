@@ -1,0 +1,139 @@
+from math import *
+import random
+list = ['Aire d une sphère : A =  4 pi r2''Aire d un  disque : A  =  pi r2 ''Volume d une pyramide : V = ( A x h) /3''Aire d un carré est coté*coté','Aire d un triangle est b*h/2','( a+ b )2 = a2 +2ab + b2','( a - b )2 = a2 - 2ab + b2','( a + b) ( a - b) = a2 - b2','pi egale 3,141592']
+cliste = random.choice(list)
+print("Choisi une des taches:")
+print("1= Cm en m")
+print("2= ML en L")
+print("3= Masse volumique (g/L)")
+print("4= Cm3 en L")
+print("5= Concentration massique")
+print("6= Km en miles")
+print("7= Cm en inches")
+print("8= Le jeu de Mohammed")
+print("9= La Valeur Absolue")
+print("10= La Machine a Maladie")
+cm = float(input("Alors: "))
+
+if cm == 1:
+    ca = int(input("combien de cm: "))
+    cb = ca / 100
+    print(cb, "m")
+
+elif cm == 2:
+    cc = float(input("combien de ml: "))
+    cd = cc / 1000
+    print(cd, "l")
+elif cm == 3:
+    ce = int(input("combien de g: "))
+    cf = int(input("combien de l: "))
+    cg = ce / cf
+    print(cg, "g/L")
+elif cm == 4:
+    ch = float(input("combien de cm3: "))
+    ci = ch / 1000
+    print(ci, "L")
+elif cm == 5:
+    cj = int(input("volume mere: "))
+    ck = int(input("volume fille: "))
+    cl = cj / ck
+    print("concentration masse:", cl)
+elif cm == 6:
+    cn = float(input("combien de km: "))
+    co = cn/1.6
+    print(co, "miles")
+elif cm == 7:
+    cn = float(input("combien de cm: "))
+    co = cn*0.39370079
+    print(co, "inches")
+elif cm == 8:
+    cz = random.randint(1, 100)
+
+    cy = input("Salam,Ton prenom khoya?")
+    cx = 0
+    print('okay! ' + cy + ' jpense a un nombre:')
+
+    while cx < 10:
+        guess = int(input())
+        cx += 1
+        caa = 10-cx
+        if guess < cz:
+            print('Un schwiya plus...')
+            print("plus que",caa,"essais...")
+        elif guess > cz:
+            print('Un schwiya moins...')
+            print("plus que", caa, "essais")
+        if guess == cz:
+            break
+    if guess == cz and cx==1:
+      print("Mektoub...")
+    elif guess == cz :
+        print('Mebrouk mon frero en ' + str(cx) + ' coups!')
+    else:
+        print('Ta pas trouver, petit cheetan vas ' + str(cz))
+elif cm==9 :
+    print("La valeur Absolue...")
+    print("Équation avec:")
+    print("1= x+...")
+    print("2= x-...")
+    dm = float(input("Alors: "))
+    if dm == 1:
+        print("C'est x + quoi?")
+        da = int(input("Alors: "))
+        print("Ducoup, c'est x+",da,"= ?")
+        db = int(input("Alors: "))
+        print("x est a une distance de -", da, )
+        print("de plus ou moins ", db, )
+    elif dm == 2:
+        print("C'est x - quoi?")
+        dc = int(input("Alors: "))
+        print("Ducoup, c'est x-", dc, "= ?")
+        dd = int(input("Alors: "))
+        print("x est a une distance de ", dc, )
+        print("de plus ou moins ", dd, )
+elif cm==10:
+    print("La Machine a Science")
+    print("Agent Pathogène:")
+    print("1=Un virus")
+    print("2=Une bacterie")
+    em = float(input("Alors: "))
+    if em == 1:
+        print("Comment est-elle arrivé la?")
+        print("1=Un animal ou microorganisme")
+        print("2=Par l'air ou conctact")
+        print("3=Par rapport sexuel")
+        ea = int(input("Alors: "))
+        if ea == 1:
+            print("Agent Pathogène : Virus")
+            print("Transmission : Vectorielle")
+        elif ea == 2:
+            print("Agent Pathogène : Virus")
+            print("Transmission : Direct")
+        elif ea == 3:
+            print("Agent Pathogène : Virus")
+            print("Transmission : Vectorielle")
+            print("Ceci est une MST")
+    if em == 2:
+        print("Comment est-elle arrivé la?")
+        print("1=Un animal ou microorganisme")
+        print("2=Par l'air ou conctact")
+        print("3=Par rapport sexuel")
+        eb = int(input("Alors: "))
+        print("")
+        if eb == 1:
+            print("Agent Pathogène : Bactérie")
+            print("Transmission : Vectorielle")
+        elif eb == 2:
+            print("Agent Pathogène : Bactérie")
+            print("Transmission : Direct")
+        elif eb == 3:
+            print("Agent Pathogène : Bactérie")
+            print("Transmission : Vectorielle")
+            print("Ceci est une MST")
+elif cm==420 :
+    print("Qu'est que tu vas faire quoi")
+    print("C'est Raphael le roi")
+
+print("")
+print("info utile:")
+print(cliste)
